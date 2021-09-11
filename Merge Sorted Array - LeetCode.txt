@@ -1,0 +1,108 @@
+Code Snippet:
+class Solution {
+    public void merge(int[] nums1, int m, int[] nums2, int n) {
+        
+        //approach 1 : TC = O(m * n); SC = O(1)
+        /*int nums1index = 0, nums2index = 0, temp = -1, c = m;
+        
+        while(nums1index < c && nums2index < n) {
+            
+            if(nums1[nums1index] < nums2[nums2index])
+                nums1index++;
+            else if(nums1[nums1index] >= nums2[nums2index]) {
+                
+                for(int i = m + n - 1; i > nums1index; i--){
+                    
+                    nums1[i] = nums1[i - 1];
+                    
+                }
+                
+                nums1[nums1index] = nums2[nums2index];
+                
+                nums1index++;
+                nums2index++;
+                
+                c++;
+                
+            }
+            
+        }
+        
+        if(nums1index == c && nums2index < n) {
+            
+            while(nums1index < m + n && nums2index < n) {
+                
+                nums1[nums1index] = nums2[nums2index];
+                nums2index++;
+                nums1index++;
+                
+            }
+            
+        }*/
+        
+        //approach 2 TC = O(m * n); SC = O(m + n)
+        /*int[] nums = new int[m + n];
+        
+        int i = 0, j = 0, c = 0;
+        
+        while(i < m && j < n) {
+            
+            if(nums1[i] <= nums2[j]) {
+                
+                nums[c] = nums1[i];
+                i++;
+                
+            }
+            else {
+                
+                nums[c] = nums2[j];
+                j++;
+                
+            }
+            
+            c++;
+        }
+        
+        if(i == m && j < n) {
+            
+            for(int k = j; k < n; k++, c++) {
+                
+                nums[c] = nums2[k];
+                
+            }
+            
+        }
+        else if(i < m && j == n) {
+            
+            for(int k = i; k < m; k++, c++) {
+                
+                nums[c] = nums1[k];
+                
+            }
+            
+        }
+        
+        for(int k = 0; k < m + n; k++) {
+            
+            nums1[k] = nums[k];
+        }*/
+        
+        //approah 3 : TC = (m + n); SC = O(1)
+        
+        int i = m - 1;
+        int j = n - 1;
+        int index = m + n - 1;
+        
+        while(index >= 0 && i >= 0 && j >= 0) {
+            
+            nums1[index--] = nums1[i] >= nums2[j] ? nums1[i--] : nums2[j--];
+            
+        }
+        
+        while(j >= 0) {
+            
+            nums1[index--] = nums2[j--];
+            
+        }
+    }
+}
