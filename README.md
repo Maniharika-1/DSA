@@ -2,8 +2,8 @@
 DSA Practice questions and solutions
 
 ### 1. Majority Element - LeetCode
-Problem Statement:
-Given an array nums of size n, return the majority element.
+Problem Statement:  
+Given an array nums of size n, return the majority element.  
 The majority element is the element that appears more than ⌊n / 2⌋ times. You may assume that the majority element always exists in the array.
 
 Example 1:  
@@ -34,11 +34,13 @@ Input: nums1 = [1,2,3,0,0,0], m = 3, nums2 = [2,5,6], n = 3
 Output: [1,2,2,3,5,6]  
 Explanation: The arrays we are merging are [1,2,3] and [2,5,6].  
 The result of the merge is [1,2,2,3,5,6] with the underlined elements coming from nums1.  
+
 Example 2:  
 Input: nums1 = [1], m = 1, nums2 = [], n = 0  
 Output: [1]  
 Explanation: The arrays we are merging are [1] and [].  
 The result of the merge is [1].  
+
 Example 3:  
 Input: nums1 = [0], m = 0, nums2 = [1], n = 1  
 Output: [1]  
@@ -54,3 +56,5 @@ Constraints:
 * -109 <= nums1[i], nums2[j] <= 109   
 
 Follow up: Can you come up with an algorithm that runs in O(m + n) time?  
+
+Find the solution [here](Find the solution [here](https://github.com/Maniharika-1/DSA/blob/main/Majority%20Element%20-%20LeetCode.txt).    
