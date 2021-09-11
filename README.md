@@ -57,4 +57,4 @@ Constraints:
 
 Follow up: Can you come up with an algorithm that runs in O(m + n) time?  
 
-Find the solution [here](Find the solution [here](https://github.com/Maniharika-1/DSA/blob/main/Majority%20Element%20-%20LeetCode.txt).    
+Find the solution [here](https://github.com/Maniharika-1/DSA/blob/main/Merge%20Sorted%20Array%20-%20LeetCode.txt).     
