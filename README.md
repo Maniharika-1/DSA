@@ -1,5 +1,5 @@
 ## DSA
-<font size="0.2">DSA Practice questions and solutions</font>
+DSA Practice questions and solutions
 
 ### 1. Majority Element - LeetCode
 Problem Statement:  
